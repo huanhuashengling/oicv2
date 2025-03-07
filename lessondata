@@ -1,0 +1,151 @@
+-- 三年级 上册
+INSERT INTO units (volumes_id, title, sort_order) VALUES (1, '开启信息生活 了解信息社会', 1);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (1, '走进信息社会', 1, 3111);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (1, '揭秘计算机', 2, 3112);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (1, '畅游计算机网络', 3, 3113);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (1, '跨学科活动：线上游故宫', 4, 3114);
+
+INSERT INTO units (volumes_id, title, sort_order) VALUES (1, '信息时代主人 用好信息资源', 2);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (2, '搜索信息', 1, 3121);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (2, '筛选并使用信息', 2, 3122);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (2, '整理信息', 3, 3123);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (2, '制订旅行计', 4, 3124);
+
+INSERT INTO units (volumes_id, title, sort_order) VALUES (1, '玩转社交媒体 分享精彩生活', 3);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (3, '数字身份新体验', 1, 3131);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (3, '设计精美图片', 2, 3132);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (3, '分享信息', 3, 3133);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (3, '我的数字足迹', 4, 3134);
+
+-- 三年级 下册
+INSERT INTO units (volumes_id, title, sort_order) VALUES (2, '学会表达——数字化讲故事', 1);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (4, '构思故事内容', 1, 3211);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (4, '丰富表达形式', 2, 3212);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (4, '美化数字作', 3, 3213);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (4, '跨学科活动：分享我的数字作品', 4, 3214);
+
+INSERT INTO units (volumes_id, title, sort_order) VALUES (2, '新媒体力量——出彩的短视频', 2);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (5, '走进新媒体时代', 1, 3221);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (5, '记录美好瞬间', 2, 3222);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (5, '制作出彩的短视频', 3, 3223);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (5, '记录校园生活的一天', 4, 3224);
+
+INSERT INTO units (volumes_id, title, sort_order) VALUES (2, '在线学习——协作学习效率高', 3);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (6, '初识在线学习', 1, 3231);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (6, '规划学习项目', 2, 3232);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (6, '在线协作学习', 3, 3233);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (6, '科普网络安全知识', 4, 3234);
+
+-- 四年级 上册
+INSERT INTO units (volumes_id, title, sort_order) VALUES (3, '数据来自记录', 1);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (7, '通过数据了解世界', 1, 4111);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (7, '数据里面宝藏多', 2, 4112);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (7, '数据从哪里来', 3, 4113);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (7, '记录个人健康数据', 4, 4114);
+
+INSERT INTO units (volumes_id, title, sort_order) VALUES (3, '数据管理、编辑及使用', 2);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (8, '让数据更易使用', 1, 4121);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (8, '让数据为需所用', 2, 4122);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (8, '数据可视化的威力', 3, 4123);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (8, '跨学科活动：用图表制作健康报告', 4, 4124);
+
+INSERT INTO units (volumes_id, title, sort_order) VALUES (3, '将数据变成信息', 3);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (9, '从数据到信息', 1, 4131);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (9, '用程序为数据排序', 2, 4132);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (9, '用程序快速找数据', 3, 4133);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (9, '探寻身体数据中的信息', 4, 4134);
+
+-- 四年级 下册
+INSERT INTO units (volumes_id, title, sort_order) VALUES (4, '历史上的编码', 1);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (10, '烽火传敌情', 1, 4211);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (10, '电波加密语', 2, 4212);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (10, '秘密信息守护者', 3, 4213);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (10, '跨学科活动：利用编码设计解密游戏', 4, 4214);
+
+INSERT INTO units (volumes_id, title, sort_order) VALUES (4, '编码与生活', 2);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (11, '编码让生活更有秩序', 1, 4221);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (11, '生活中的常见编码', 2, 4222);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (11, '编码的使用与安全', 3, 4223);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (11, '编写活动中的参赛码', 4, 4224);
+
+INSERT INTO units (volumes_id, title, sort_order) VALUES (4, '数字世界中的编码', 3);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (12, '二进制——计算机唯一能识别的编码', 1, 4231);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (12, '用数字编码世界万物', 2, 4232);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (12, '程序也是编码', 3, 4233);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (12, '体验并创建二维码', 4, 4234);
+
+-- 五年级 上册
+INSERT INTO units (volumes_id, title, sort_order) VALUES (5, '初识算法', 1);
+INSERT INTO lessons (units_id, title, sort_order,lesson_code) VALUES (13, '走进算法', 1, 5111);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (13, '算法的工作过程和特点', 2, 5112);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (13, '算法的应用', 3, 5113);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (13, '计算大比拼', 4, 5114);
+
+INSERT INTO units (volumes_id, title, sort_order) VALUES (5, '描述算法', 2);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (14, '用自然语言描述算法', 1, 5121);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (14, '用流程图描述算法', 2, 5122);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (14, '用程序描述算法', 3, 5123);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (14, '信息加密', 4, 5124);
+
+INSERT INTO units (volumes_id, title, sort_order) VALUES (5, '算法的控制结构', 3);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (15, '算法的基本结构——顺序结构', 1, 5131);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (15, '算法的基本结构——分支结构', 2, 5132);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (15, '算法的基本结构——循环结构', 3, 5133);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (15, '跨学科活动：绘制莲花', 4, 5134);
+
+-- 五年级 下册
+INSERT INTO units (volumes_id, title, sort_order) VALUES (6, '运用经典算法 解决简单问题', 1);
+INSERT INTO lessons (units_id, title, sort_order,lesson_code) VALUES (16, '二分查找', 1, 5211);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (16, '冒泡排序', 2, 5212);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (16, '菲波纳奇数列', 3, 5213);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (16, '趣味数列', 4, 5214);
+
+INSERT INTO units (volumes_id, title, sort_order) VALUES (6, '生活中的常见算法', 2);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (17, '趣谈匹配算法', 1, 5221);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (17, '网页排名算法', 2, 5222);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (17, '推荐算法的妙用', 3, 5223);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (17, '跨学科活动：作品投票', 4, 5224);
+
+INSERT INTO units (volumes_id, title, sort_order) VALUES (6, '用算法视角看世界', 3);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (18, '算法的效率', 1, 5231);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (18, '算法助力信息安全', 2, 5232);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (18, '欣赏算法之美', 3, 5233);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (18, '查找学号', 4, 5234);
+
+-- 六年级 上册
+INSERT INTO units (volumes_id, title, sort_order) VALUES (7, '了解系统', 1);
+INSERT INTO lessons (units_id, title, sort_order,lesson_code) VALUES (19, '解锁系统状态——有限状态与开关量', 1, 6111);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (19, '从无限到有限——连续量与状态控制', 2, 6112);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (19, '神舟号飞天记——航天器中复杂系统控制', 3, 6113);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (19, '跨学科活动：制作自控植物园', 4, 6114);
+
+INSERT INTO units (volumes_id, title, sort_order) VALUES (7, '用计算机控制系统', 2);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (20, '从手动到自动——自动控制与反馈', 1, 6121);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (20, '反馈计算不简单——系统参数设置', 2, 6122);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (20, '计算机控制系统——常见控制系统介绍', 3, 6123);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (20, '跨学科活动：体验智能家居', 4, 6124);
+
+INSERT INTO units (volumes_id, title, sort_order) VALUES (7, '自主可控保安全', 3);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (21, '历史的教训——系统安全的重要性', 1, 6131);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (21, '系统安全有规矩——技术与管理保障', 2, 6132);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (21, '自主可控是根本——核心技术的价值', 3, 6133);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (21, '跨学科活动：自主可控宣讲会', 4, 6134);
+
+-- 六年级 下册
+INSERT INTO units (volumes_id, title, sort_order) VALUES (8, '现实世界中的系统', 1);
+INSERT INTO lessons (units_id, title, sort_order,lesson_code) VALUES (22, '解锁系统状态——有限状态与开关量', 1, 6211);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (22, '从无限到有限——连续量与状态控制', 2, 6212);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (22, '神舟号飞天记——航天器中复杂系统控制', 3, 6213);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (22, '跨学科活动：制作自控植物园', 4, 6214);
+
+INSERT INTO units (volumes_id, title, sort_order) VALUES (8, '用计算机控制系统', 2);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (23, '从手动到自动——自动控制与反馈', 1, 6221);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (23, '反馈计算不简单——系统参数设置', 2, 6222);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (23, '计算机控制系统——常见控制系统介绍', 3, 6223);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (23, '跨学科活动：体验智能家居', 4, 6224);
+
+INSERT INTO units (volumes_id, title, sort_order) VALUES (8, '自主可控保安全', 3);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (24, '历史的教训——系统安全的重要性', 1, 6231);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (24, '系统安全有规矩——技术与管理保障', 2, 6232);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (24, '自主可控是根本——核心技术的价值', 3, 6233);
+INSERT INTO lessons (units_id, title, sort_order, lesson_code) VALUES (24, '跨学科活动：自主可控宣讲会', 4, 6234);
