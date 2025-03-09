@@ -11,6 +11,8 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\TeacherAuthController;
+use App\Http\Controllers\Auth\StudentAuthController;
+use App\Http\Controllers\Auth\SchoolAuthController;
 use Inertia\Inertia;
 
 Route::middleware('guest')->group(function () {
@@ -64,13 +66,11 @@ Route::get('teacher/login', [TeacherAuthController::class, 'showLoginForm'])->na
 Route::post('teacher/login', [TeacherAuthController::class, 'login'])->name('teacher.login.post');
 Route::post('teacher/logout', [TeacherAuthController::class, 'logout'])->name('teacher.logout');
 
-// Route::middleware('auth:teacher')->group(function () {
-    // Route::get('teacher/dashboard', function () {
-    //     return Inertia::render('Teacher/Dashboard');
-    // })->middleware('auth:teacher')->name('teacher.dashboard');
-    // Route::get('courses', [CourseController::class, 'index'])->name('courses.index');
-// });
-// Route::get('teacher/dashboard', function () {
-//     return Inertia::render('Teacher/Dashboard');
-// })->middleware('auth:teacher')->name('teacher.dashboard');
+Route::get('student/login', [StudentAuthController::class, 'showLoginForm'])->name('student.login');
+Route::post('student/login', [StudentAuthController::class, 'login'])->name('student.login.post');
+Route::post('student/logout', [StudentAuthController::class, 'logout'])->name('student.logout');
+
+Route::get('school/login', [SchoolAuthController::class, 'showLoginForm'])->name('school.login');
+Route::post('school/login', [SchoolAuthController::class, 'login'])->name('school.login.post');
+Route::post('school/logout', [SchoolAuthController::class, 'logout'])->name('school.logout');
 

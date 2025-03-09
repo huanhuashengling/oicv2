@@ -5,16 +5,16 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Models\Teacher;
+use App\Models\School;
 use Illuminate\Support\Facades\Hash;
 use Inertia\Inertia;
 
-class TeacherAuthController extends Controller
+class SchoolAuthController extends Controller
 {
-    // 显示登录页面
+        // 显示登录页面
     public function showLoginForm()
     {
-        return Inertia::render('Auth/TeacherLogin');
+        return Inertia::render('Auth/SchoolLogin');
     }
 
     // 教师登录逻辑
@@ -27,24 +27,24 @@ class TeacherAuthController extends Controller
         ]);
 
         // 使用用户名而非邮箱进行身份验证
-        $teacher = Teacher::where('username', $request->username)->first();
+        $school = School::where('username', $request->username)->first();
 
-        if (!$teacher || !Hash::check($request->password, $teacher->password)) {
+        if (!$school || !Hash::check($request->password, $school->password)) {
             return back()->withErrors([
                 'username' => 'The provided credentials are incorrect.',
             ]);
         }
 
         // 登录并重定向
-        Auth::guard('teacher')->login($teacher);
+        Auth::guard('school')->login($school);
 
-        return redirect()->route('teacher.dashboard');
+        return redirect()->route('school.dashboard');
     }
 
     // 教师退出登录
     public function logout()
     {
-        Auth::guard('teacher')->logout();
-        return redirect()->route('teacher.login');
+        Auth::guard('school')->logout();
+        return redirect()->route('school.login');
     }
 }

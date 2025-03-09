@@ -18,6 +18,6 @@ class Volume extends Model
 
     public function units()
     {
-        return $this->hasMany(Unit::class);
+        return $this->hasMany(Unit::class, "volumes_id");
     }
 }

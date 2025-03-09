@@ -9,7 +9,22 @@ class Activity extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['lesson_id', 'title', 'type', 'content', 'sort_order'];
+    protected $fillable = [
+        'type',
+        'name',
+        'description',
+        'goals',
+        'steps',
+        'resources',
+        'order_number',
+        'participant_roles',
+        'estimated_duration',
+        'assessment_criteria',
+        'open_strategy',
+        'status',
+        'priority',
+        'related_links',
+    ];
 
     public function lesson()
     {

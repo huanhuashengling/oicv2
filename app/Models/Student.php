@@ -2,17 +2,34 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable; // 使用 Authenticatable
+use Illuminate\Notifications\Notifiable;
 
-class Student extends Model
+class Student extends Authenticatable // 继承 Authenticatable
 {
-    use HasFactory;
+    use HasFactory, Notifiable; // 使用 HasFactory 和 Notifiable
 
-    protected $fillable = ['name', 'email', 'school_id'];
+    protected $table = 'students';
 
-    // 一个学生属于一个学校
-    public function school()
+    protected $fillable = [
+        'username',
+        'password',
+        'gender',
+        'display_name',
+        'sclasses_id',
+    ];
+    
+    protected $hidden = ['password', 'remember_token']; // 隐藏密码和记住令牌
+
+    // 一个学生属于一个班级
+    public function sclass()
     {
-        return $this->belongsTo(School::class);
+        return $this->belongsTo(Sclass::class, 'sclasses_id');
+    }
+
+    public function setPasswordAttribute($password)
+    {
+        $this->attributes['password'] = bcrypt($password);
     }
 }

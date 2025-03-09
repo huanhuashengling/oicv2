@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use App\Models\Teacher;
+use App\Models\School;
+use App\Models\Student;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -27,6 +29,23 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        School::create([
+            'username' => 'test',
+            'districts_id' => '1',
+            'password' => 'password', // 生成加密后的密码
+            'title' =>'育英三小',
+            'display_name' => "育英三小",
+            'code' => '41',
+            'description' => '',
+        ]);
+
+        Student::create([
+            'username' => 'test',
+            'display_name' => 'TEST',
+            'sclasses_id' => '1',
+            'gender' => '1',
+            'password' => 'password', // 生成加密后的密码
+        ]);
 
         Teacher::create([
             'username' => 'test',

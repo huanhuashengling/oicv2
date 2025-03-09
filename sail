@@ -22,7 +22,16 @@ sail
 
 
 
-
+ <tr v-for="unit in units" :key="unit.id" class="border-b border-gray-300 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">{{ unit.id }}</td>
+                        <td class="py-3 px-6 text-left">{{ unit.title }}</td>
+                        <td class="py-3 px-6 text-left">{{ unit.description }}</td>
+                        <td class="py-3 px-6 text-left">{{ unit.order }}</td>
+                        <td class="py-3 px-6 text-center">
+                            <button @click="editUnit(unit.id)" class="text-blue-500 hover:text-blue-700">编辑</button>
+                            <button @click="deleteUnit(unit.id)" class="text-red-500 hover:text-red-700 ml-2">删除</button>
+                        </td>
+                    </tr>
 
 <template>
   <div>

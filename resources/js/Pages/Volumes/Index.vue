@@ -14,46 +14,69 @@ const deleteVolume = (id) => {
     console.log('删除课程:', id);
 };
 
-const navigateToUnit = (volumeId) => {
-    window.location.href = `/lessons/${volumeId}`; // 假设 Laravel 的路由是这种形式
+const navigateToUnit = (unitId) => {
+    window.location.href = `/units/${unitId}`;
 };
 </script>
 
 <template>
-    <Head title="Dashboard" />
+    <Head title="册次表" />
 
     <AuthenticatedLayout>
         <template #header>
-            <h2
-                class="text-xl font-semibold leading-tight text-gray-800 dark:text-gray-200"
-            >
-                册次列表
+            <h2 class="text-xl font-semibold leading-tight text-gray-800 dark:text-gray-200">
+                {{course.title}} 册次表
             </h2>
         </template>
-
-        <div class="p-6 bg-white shadow-md rounded-lg">
-            <h1 class="text-2xl font-semibold mb-4">{{course.title}}</h1>
-            <table class="min-w-full bg-white border border-gray-300">
-                <thead>
-                    <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-                        <th class="py-3 px-6 text-left">ID</th>
-                        <th class="py-3 px-6 text-left">年级</th>
-                        <th class="py-3 px-6 text-left">册次</th>
-                        <th class="py-3 px-6 text-center">操作</th>
-                    </tr>
-                </thead>
-                <tbody class="text-gray-600 text-sm font-light">
-                    <tr v-for="volume in volumes" :key="volume.id" class="border-b border-gray-300 hover:bg-gray-100" @click="navigateToUnit(volume.id)">
-                        <td class="py-3 px-6 text-left">{{ volume.id }}</td>
-                        <td class="py-3 px-6 text-left">{{ volume.grade_char }}</td>
-                        <td class="py-3 px-6 text-left">{{ volume.semester_char }}</td>
-                        <td class="py-3 px-6 text-center">
-                            <button @click="editVolume(volume.id)" class="text-blue-500 hover:text-blue-700">编辑</button>
-                            <button @click="deleteVolume(volume.id)" class="text-red-500 hover:text-red-700 ml-2">删除</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <main class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+                <table class="min-w-full bg-white border border-gray-300">
+                    <thead>
+                        <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                            <th class="py-3 px-6 text-left">册次</th>
+                            <th class="py-3 px-6 text-left">一单元</th>
+                            <th class="py-3 px-6 text-left">二单元</th>
+                            <th class="py-3 px-6 text-left">三单元</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-600 text-sm font-light">
+                        <tr v-for="volume in volumes" :key="volume.id" class="border-b border-gray-300 hover:bg-gray-100">
+                            <td class="py-3 px-6 text-left">{{ volume.grade_char }}{{ volume.semester_char }}</td>
+                            <td class="py-3 px-6 text-left">
+                                    <div>
+                                        <a
+                                            v-if="volume.units[0]"
+                                            href="#"
+                                            @click.prevent="navigateToUnit(volume.units[0].id)"
+                                        >
+                                            {{ volume.units[0].title }}
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="py-3 px-6 text-left">
+                                    <div>
+                                        <a
+                                            v-if="volume.units[1]"
+                                            href="#"
+                                            @click.prevent="navigateToUnit(volume.units[1].id)"
+                                        >
+                                            {{ volume.units[1].title }}
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="py-3 px-6 text-left">
+                                    <div>
+                                        <a
+                                            v-if="volume.units[2]"
+                                            href="#"
+                                            @click.prevent="navigateToUnit(volume.units[2].id)"
+                                        >
+                                            {{ volume.units[2].title }}
+                                        </a>
+                                    </div>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+</main>
     </AuthenticatedLayout>
 </template>

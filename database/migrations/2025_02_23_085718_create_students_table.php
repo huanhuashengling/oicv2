@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('gender');
             $table->integer('sclasses_id');
-            $table->string('title');
+            $table->string('display_name');
             $table->rememberToken();
             $table->timestamps();
 

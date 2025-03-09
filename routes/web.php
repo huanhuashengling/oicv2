@@ -36,9 +36,21 @@ Route::middleware('auth:teacher')->group(function () {
     Route::get('courses', [CourseController::class, 'index'])->name('courses.index');
     Route::get('volumes', [VolumeController::class, 'index'])->name('volumes.index');
     // Route::get('volumes/{courseId}', [VolumeController::class, 'index'])->name('volumes.index');
-    Route::get('units/{volumeId}', [UnitController::class, 'index'])->name('units.index');
+    Route::get('units/{unitId}', [UnitController::class, 'index'])->name('units.index');
     Route::get('lessons/{unitId}', [LessonController::class, 'index'])->name('lessons.index');
     Route::get('lessons/{volumeId}', [UnitController::class, 'index'])->name('units.index');
+});
+
+Route::middleware('auth:school')->group(function () {
+    Route::get('school/dashboard', function () {
+        return Inertia::render('School/Dashboard');
+    })->name('school.dashboard');
+});
+
+Route::middleware('auth:student')->group(function () {
+    Route::get('student/dashboard', function () {
+        return Inertia::render('Student/Dashboard');
+    })->name('student.dashboard');
 });
 
 require __DIR__.'/auth.php';
